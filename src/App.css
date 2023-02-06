@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  font-family: Poppins;
+}
+.navbar{
+  width: 100%;
+  background-color: white;
+  height: 70px;
+  box-shadow: 1px -16px 5px 1em rgb(203, 203, 203);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav--img{
+  margin-top: 20px;
+  margin-left: 35px;
+  max-width: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.images{
+  
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  align-self: center;
+
+}
+.hero{
   display: flex;
   flex-direction: column;
+}
+.hero > .content{
+  padding-left: 40px ;
+  max-width: 400px;
+  height: auto;
+}
+.hero > .content > h1{
+  margin-bottom: 0;
+}
+.hero > .content > p{
+  font-size: smaller;
+}
+
+.card{
+  padding-top: 40px;
+  font-size: 12px;
+ 
+  flex: 0 0 auto;
+}
+
+.parent-image{
+  position: relative;
+}
+.card--badge{
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: white;
+  font-weight: bold;
+  border-radius: 2px;
+  padding: 1px 4px;
+
+}
+.card--images{
+  position: relative;
+  height: 230px;
+  width: 175px;
+  margin-bottom: 0%;
+
+}
+.rating-info{
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.rating-info > .star{
+  width: 14px;
+  height: 14px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ .review-count{
+  color: gray;
+}
+.country{
+  color: gray;
+}
+.card > .cost{
+  margin: 0;
+} 
+
+.bold{
+  font-weight: bold;
+
+}
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+  padding-left: 40px;
 }
